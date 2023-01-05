@@ -39,4 +39,14 @@ git push -u origin main
  
 -COMPROBADO
 
+SEGUNDA PARTE
 
+IMPORTANTE: Debemos siempre iniciar el agente y volver a cargar la clave siempre que cerremos y abramos la consola gitBash.
+
+INCIAR EL AGENTE Y CARGAR LA CLAVE.
+
+
+eval `ssh-agent -s`
+ssh-add ~/.ssh/clave [en g14 es: github].
+
+FIN
