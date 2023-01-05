@@ -35,5 +35,6 @@ IMPORTANTE: hasta donde se o practique si hacemos git init sobre una carpeta y e
 
 SOLUCION: Deberemos hacer un git init en otra carpeta para poder asociarla al repo2.
  
+COMPROBADO
 
 
