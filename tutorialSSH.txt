@@ -47,6 +47,6 @@ INCIAR EL AGENTE Y CARGAR LA CLAVE.
 
 
 eval `ssh-agent -s`
-ssh-add ~/.ssh/clave [en g14 es: github].
+ssh-add ~/.ssh/github [github: es la clavePublica en g14].
 
 FIN
