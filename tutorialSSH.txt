@@ -1,40 +1,42 @@
 PASOS.
 
-1. crear llave.
+1. CREAR LA LLAVE.
 buscamos la carpeta .ssh y dentro creamos una nueva clave
+
 ssh-keygen -t ed25519 -C "email@gmail.com"
 
-por default nos creara un archivo donde guardara la clave llamado id_ed25519, nosotros podemos cambiar el nombre. 
+-por default nos creara un archivo donde guardara la clave llamado id_ed25519, nosotros podemos cambiar el nombre. 
+-passphrase: algo parecido a una contraseña, se puede dejar vacia.
 
-passphrase: algo parecido a una contraseña, se puede dejar vacia.
+2. INICIAR EL AGENTE.
 
-2. iniciar el agente
 eval `ssh-agent -s`
 
-el agente es un programa en segundo plano que estara constantemente comprobando las claves. Es necesario que este arrancado o inicializado sino las claves ssh no funcionaran. 
+-El agente es un programa en segundo plano que estara constantemente comprobando las claves. Es necesario que este arrancado o inicializado sino las claves ssh no funcionaran. 
 
-3. agregar la clave PRIVADA al agente ssh
+3. AGREGAR LA CLAVE *PRIVADA* AL AGENTE SSH.
+
 ssh-add [ruta completa + nombre del archivo donde esta la clave]
 ssh-add ~/.ssh/nombreDeLaClave
 
-4. buscamos la clave PUBLICA la copiamos y la pegamos en el ssh de gitHub. 
+4. BUSCAMOS LA CLAVE *PUBLICA*, LA COPIAMOS Y LA PEGAMOS EN EL GENERADOR DE SSH-KEYS DE GITHUB.
 
-5. generamos un nuevo repo.
-6. pegamos el siguiente codigo para crear un repo nuevo desde la carpeta que querramos subir. 
+5. CREAMOS UN NUEVO REPO DESDE GITHUB.
+6. PEGAMOS EL CODIGO QUE SE GENERA AL CREAR EL REPO PARA SUBIR LOS ARCHIVOS AL REPO DE GITHUB. 
 
 echo "# repo" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:nekonapster/repo.git
+git remote add origin git@github.com:nekonapster/repo.git 
 git push -u origin main
 
 
-IMPORTANTE: hasta donde se o practique si hacemos git init sobre una carpeta y esa carpeta es lo que subimos a (por ejemplo) repo1 luego no podremos asociar y subir esa carpeta a repo2.
+-IMPORTANTE: hasta donde se o practique si hacemos git init sobre una carpeta y esa carpeta es lo que subimos a (por ejemplo) repo1 luego no podremos asociar y subir esa carpeta a repo2.
 
-SOLUCION: Deberemos hacer un git init en otra carpeta para poder asociarla al repo2.
+-SOLUCION: Deberemos hacer un git init en otra carpeta para poder asociarla al repo2.
  
-COMPROBADO
+-COMPROBADO
 
 
