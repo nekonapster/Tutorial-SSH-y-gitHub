@@ -1,1 +1,3 @@
 Probando salir con "exit" de gitbash para ver si me pide iniciar el agent y cargar la clave.
+
+NOTA: TENGO QUE VOLVER INCIAR EL AGENTE Y CARGAR EL ARCHIVO CON LA CLAVE.
