@@ -65,4 +65,13 @@ Luego debemos proseguir como de costumbre:
 CUARTA PARTE
 Ahora he borrado nuevamente mi carpeta .git, luego hice un git init en la misma ubicacion donde estaba el .git
 
+Al borrar el .git pierdo el puente entre mi carpeta local y mi repo. 
+Vuelvo hacer un git init para ver si puedo seguir haciendo push a mi repo en github.
+
+Una vez vuelto hacer el git init, si tiro un status me muestra en rojo los cambios efectuados. 
+
+ERROR: cuando borro el .git de la carpeta y creo uno nuevo con git init no puedo hacer un push directamente, debo hacer un add de mi ruta.
+
+git remote add nekonapster git@github.com:nekonapster/Tutorial-SSH-y-gitHub.git
+git remote add <name> <url>
 
