@@ -49,4 +49,20 @@ INCIAR EL AGENTE Y CARGAR LA CLAVE.
 eval `ssh-agent -s`
 ssh-add ~/.ssh/github [github: es la clavePublica en g14].
 
-FIN
+TERCERA PARTE
+Borre el archivo .git de mi carpeta local, esto provoco que no pudiera hacer push al repo asociado a ese .git en gitHub. 
+
+-SOLUCION: Clone mi archivo de gitHub a local y luego añadi y subi lo nuevo.
+
+git clone git@github.com:nekonapster/Tutorial-SSH-y-gitHub.git
+git clone [ruta de mi repositorio] 
+
+Luego debemos proseguir como de costumbre:
+	git add .
+	git commit -m "mensaje del commit"
+	git push
+
+CUARTA PARTE
+Ahora he borrado nuevamente mi carpeta .git, luego hice un git init en la misma ubicacion donde estaba el .git
+
+
