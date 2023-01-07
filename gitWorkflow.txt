@@ -1,0 +1,9 @@
+1. Creamos un repo en GitHub
+2. Creamos una carpeta en local
+3. Dentro de la carpeta iniciamos un GitBash
+4. Activamos el agente ssh y cargamos la clave:
+    eval `ssh-agent -s`
+    ssh-add ~/.ssh/github
+5. Hacemos un clone de nuestro repo en remoto al local:
+    git clone git@github.com:nekonapster/Tutorial-SSH-y-gitHub.git
+6. Fin
