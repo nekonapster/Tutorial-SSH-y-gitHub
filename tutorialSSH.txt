@@ -75,3 +75,17 @@ ERROR: cuando borro el .git de la carpeta y creo uno nuevo con git init no puedo
 git remote add nekonapster git@github.com:nekonapster/Tutorial-SSH-y-gitHub.git
 git remote add <name> <url>
 
+
+IMPORTANTE:
+- Todo lo de la cuarta parte [linea 65 > 76] no funciona.
+
+-SOLUCION
+Lo unico efectivo fue hacer los siguientes pasos.
+    1. Copiamos el archivo que modifique y que no pude hacer push.
+    2. Borramos la carpeta principal en donde teniamos tambien la carpeta .git
+    3. Hacemos un clone del repo subido. 
+    4. Volcamos el archivo modificado a la carpeta clonana reemplazando el archivo de clonacion por el archivo que habiamos copiado en el punto 1.
+    5. Trabajamos con normalidad [git add .] > [git commit -m "mensaje"] > [git push]
+    
+FIN
+asfasfd
