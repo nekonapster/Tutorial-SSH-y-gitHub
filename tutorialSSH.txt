@@ -88,4 +88,3 @@ Lo unico efectivo fue hacer los siguientes pasos.
     5. Trabajamos con normalidad [git add .] > [git commit -m "mensaje"] > [git push]
     
 FIN
-asfasfd
