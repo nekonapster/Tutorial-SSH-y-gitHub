@@ -1,0 +1,23 @@
+Configurando sshd para que no tenga que arrancar el agent y cargar la clave cada vez que necesite usar ssh.
+
+Agente automatico
+    # Set the sshd service to be started automatically
+    Get-Service -Name sshd | Set-Service -StartupType Automatic
+    
+    # Now start the sshd service
+    Start-Service sshd
+
+Agente manual
+    # By default the ssh-agent service is disabled. Allow it to be manually started for the next     
+    # Make sure you're running as an Administrator.
+    Get-Service ssh-agent | Set-Service -StartupType Manual
+    
+    # Start the service
+    Start-Service ssh-agent
+    
+    # This should return a status of Running
+    Get-Service ssh-agent
+    
+    # Now load your key files into ssh-agent
+    ssh-add ~\.ssh\NombreClave
+
