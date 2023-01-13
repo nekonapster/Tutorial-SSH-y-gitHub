@@ -48,6 +48,7 @@ INCIAR EL AGENTE Y CARGAR LA CLAVE.
 
 eval `ssh-agent -s`
 ssh-add ~/.ssh/github [github: es la clavePublica en g14].
+ssh-add ~/.ssh/hp [github: es la clavePublica en HP].
 
 TERCERA PARTE
 Borre el archivo .git de mi carpeta local, esto provoco que no pudiera hacer push al repo asociado a ese .git en gitHub. 
